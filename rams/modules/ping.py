@@ -69,7 +69,6 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
-
 @register(incoming=True, from_users=DEVG, pattern=r"^gesss$")
 async def _(landak):
     await landak.reply(random.choice(gesss))
@@ -129,7 +128,7 @@ async def _(pong):
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.client.send_message(
-        pong.chat_id, f"**🌟𝗥𝗔𝗠-𝗨𝗕𝗢𝗧🌟**\n"
+        pong.chat_id, f"**🏴‍☠️𝗔𝗦𝗧𝗛𝗘𝗥𝗜𝗢𝗦-𝗨𝗦𝗘𝗥𝗕𝗢𝗧🏴‍☠️**\n"
                      f"** ➠  Sɪɢɴᴀʟ   :** "
                      f"`%sms` \n"
                      f"** ➠  Bᴏᴛᴠᴇʀ  :** "
